@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#050505;
+    color:#f5f5f5;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* NAVBAR */
+
+nav{
+    background:#000;
+    border-bottom:1px solid #2a2a2a;
+}
+
+nav .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.titulo-site{
+    color:#b8860b;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:1.2rem;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu a:hover{
+    color:#b8860b;
+}
+
+/* BANNER */
+
+.banner{
+    min-height:60vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:50px 20px;
+}
+
+.centralizado{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.titulo-banner{
+    font-size:3.5rem;
+}
+
+.descricao-banner{
+    font-size:1.2rem;
+    max-width:800px;
+    margin:auto;
+}
+
+.dourado{
+    color:#b8860b;
+}
+
+/* FRASES */
+
+.frases{
+    padding:60px 0;
+}
+
+.titulo-frases{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    flex:1 1 350px;
+
+    min-height:260px;
+
+    background:#0f0f0f;
+
+    border:1px solid #3d2f0f;
+
+    padding:25px;
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+
+    border-color:#b8860b;
+
+    box-shadow:0 0 15px rgba(184,134,11,0.3);
+}
+
+.card-title{
+    color:#b8860b;
+    margin-bottom:20px;
+}
+
+.card-text{
+    line-height:1.7;
+}
+
+/* RODAPÉ */
+
+footer{
+    background:#000;
+    border-top:1px solid #2a2a2a;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+/* MEDIA QUERY */
+
+@media(max-width:768px){
+
+    nav .container{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .menu{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+
+    .titulo-banner{
+        font-size:2.2rem;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+}
